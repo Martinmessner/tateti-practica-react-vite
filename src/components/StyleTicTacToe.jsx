@@ -77,8 +77,8 @@ export default function TicTacToe() {
       </main>
       <div className="historial">
         <h2>Historial:</h2>
-        <p>Messi Gano: {score.X} </p>
-        <p>Cristiano Gano: {score.O} </p>
+        <p style={{color: "red", fontSize: "1.1em"}}>Messi Gano: {score.X} </p>
+        <p style={{color: "white", fontSize: "1.1em"}}>Cristiano Gano: {score.O} </p>
         <button className="boton-reset" onClick={() => resetGame()}>Reiniciar Juego</button>
       </div>
     </>
