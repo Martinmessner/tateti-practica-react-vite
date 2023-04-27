@@ -6,13 +6,17 @@
 
 :root {
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #a69090;
 }
 
 .navbar {
   display: flex;
   justify-content: center;
   padding-top: .7em;
+}
+
+.navbar h1 {
+  color: black;
 }
 
 .tictactoe {
@@ -65,14 +69,12 @@
 }
 
 .celdas.X {
-  color: red;
   border: 1px red solid;
   background-image: url("./assets/messimessi.webp");
   background-size: cover;
 }
 
 .celdas.O {
-  color: blue;
   border: 1px blue solid;
   background-image: url("./assets/ronaldo.jpg");
   background-size: cover;
@@ -82,3 +84,34 @@
 .celdas.X:hover, .celdas.O:hover {
   scale: 1.2;
 }
+
+.contenedor-historial {
+  background-color: mintcream;
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  padding: .5em;
+  border-radius: 10px;
+}
+
+.contenedor-historial h2 {
+  color: black;
+}
+
+.messi {
+  color: red;
+  font-size: 1.1em;
+}
+
+.ronaldo {
+  color: blue;
+  font-size: 1.1em;
+}
+
+.turno-de-X {
+  color: red;
+}
+
+.turno-de-O {
+  color: blue;
+} 
