@@ -24,6 +24,8 @@ export default function TicTacToe() {
     if (plays[index] === '') {
       plays[index] = turn;
 
+      Setturn((turn) => (turn === PLAYERS.X ? PLAYERS.O : PLAYERS.X));
+      SetCells(plays);
       const winnerPlayer = winningCombinations.some((combinations) =>
         combinations.every((cell) => turn === plays[cell])
       );
@@ -47,9 +49,6 @@ export default function TicTacToe() {
       if (!plays.some((cell) => cell === '')) {
         Setwinner(STATUS.DRAW);
       }
-
-      Setturn((turn) => (turn === PLAYERS.X ? PLAYERS.O : PLAYERS.X));
-      SetCells(plays);
     }
   }
 
@@ -57,8 +56,8 @@ export default function TicTacToe() {
     <>
       {winner !== STATUS.PLAYING && (
         <h1 className="winner">
-          {winner === STATUS.X_WIN && 'Gano X'}
-          {winner === STATUS.O_WIN && 'Gano O'}
+          {winner === STATUS.X_WIN && 'Gano Cruz'}
+          {winner === STATUS.O_WIN && 'Gano Circulo'}
           {winner === STATUS.DRAW && 'EMPATE'}
         </h1>
       )}
