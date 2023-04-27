@@ -63,7 +63,7 @@ export default function TicTacToe() {
         </h1>
       )}
 
-      <h2>Turno de {turn}</h2>
+      <h2 className="turno">Turno de {turn}</h2>
       <main className="tictactoe">
         {cells.map((cell, index) => {
           return (
@@ -79,7 +79,7 @@ export default function TicTacToe() {
         <h2>Historial:</h2>
         <p>Cruz Gano: {score.X} </p>
         <p>Circulo Gano: {score.O} </p>
-        <button onClick={() => resetGame()}>Reiniciar Juego</button>
+        <button className="boton-reset" onClick={() => resetGame()}>Reiniciar Juego</button>
       </div>
     </>
   );

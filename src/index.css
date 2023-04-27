@@ -12,15 +12,16 @@
 .navbar {
   display: flex;
   justify-content: center;
-  padding-top: .5em;
+  padding-top: .7em;
 }
 
 .tictactoe {
   display: grid;
   grid-template-columns: repeat(3, 100px);
   grid-template-rows: repeat(3, 100px);
-  gap: 2em;
-  padding: 2em 2em;
+  justify-content: center;
+  gap: 1em;
+  padding: .5em 0em;
 }
 
 .celdas {
@@ -47,4 +48,18 @@
   gap: 10px;
   justify-content: center;
   align-items: center;
+}
+
+.turno {
+  text-align: center;
+  padding-top: .5em;
+}
+
+.boton-reset {
+  cursor: pointer;
+  padding: 1em;
+  font-size: 1em;
+  background-color: #dfdfdf;
+  color: black;
+  font-weight: 700;
 }
