@@ -63,3 +63,18 @@
   color: black;
   font-weight: 700;
 }
+
+.celdas.X {
+  color: red;
+  border: 1px red solid;
+  background-image: url("./assets/messimessi.webp");
+  background-size: cover;
+}
+
+.celdas.O {
+  color: blue;
+  border: 1px blue solid;
+  background-image: url("./assets/ronaldo.jpg");
+  background-size: cover;
+  background-position: center;
+}

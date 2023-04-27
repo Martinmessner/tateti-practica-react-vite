@@ -56,8 +56,8 @@ export default function TicTacToe() {
     <>
       {winner !== STATUS.PLAYING && (
         <h1 className="winner">
-          {winner === STATUS.X_WIN && 'Gano Cruz'}
-          {winner === STATUS.O_WIN && 'Gano Circulo'}
+          {winner === STATUS.X_WIN && 'Gano Messi'}
+          {winner === STATUS.O_WIN && 'Gano Cristiano'}
           {winner === STATUS.DRAW && 'EMPATE'}
         </h1>
       )}
@@ -67,17 +67,18 @@ export default function TicTacToe() {
         {cells.map((cell, index) => {
           return (
             <div key={index}>
-              <p onClick={() => turnPlayer(index)} className="celdas">
-                {cell}
-              </p>
+             <div onClick={() => turnPlayer(index)} className={`celdas ${cell}`}>
+              {cell === PLAYERS.X && <div className="cruz"></div>}
+              {cell === PLAYERS.O && <div className="circulo"></div>}
+            </div>
             </div>
           );
         })}
       </main>
       <div className="historial">
         <h2>Historial:</h2>
-        <p>Cruz Gano: {score.X} </p>
-        <p>Circulo Gano: {score.O} </p>
+        <p>Messi Gano: {score.X} </p>
+        <p>Cristiano Gano: {score.O} </p>
         <button className="boton-reset" onClick={() => resetGame()}>Reiniciar Juego</button>
       </div>
     </>

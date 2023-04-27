@@ -5,7 +5,7 @@ function App() {
   return (
       <>
     <div className="navbar">
-      <h1>TIC TAC TOE</h1>
+      <h1>TA TE TI - MESSI </h1>
     </div>
       <StyleTicTacToe />
     </>
