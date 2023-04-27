@@ -43,8 +43,7 @@ export default function TicTacToe() {
           }));
         }
       }
-      
-      if (!plays.some((cell) => cell === '')) {
+     else if (!plays.some((cell) => cell === '')) {
         Setwinner(STATUS.DRAW);
       }
       Setturn((turn) => (turn === PLAYERS.X ? PLAYERS.O : PLAYERS.X));
