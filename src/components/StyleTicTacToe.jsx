@@ -56,9 +56,9 @@ export default function TicTacToe() {
     <>
       {winner !== STATUS.PLAYING && (
         <h1 className="winner">
-          {winner === STATUS.X_WIN && 'Gano Messi'}
-          {winner === STATUS.O_WIN && 'Gano Cristiano'}
-          {winner === STATUS.DRAW && 'EMPATE'}
+          {winner === STATUS.X_WIN && 'Gano Messi!!'}
+          {winner === STATUS.O_WIN && 'Gano Cristiano!!'}
+          {winner === STATUS.DRAW && 'EMPATE!!'}
         </h1>
       )}
 

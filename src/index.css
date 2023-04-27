@@ -78,3 +78,7 @@
   background-size: cover;
   background-position: center;
 }
+
+.celdas.X:hover, .celdas.O:hover {
+  scale: 1.2;
+}
