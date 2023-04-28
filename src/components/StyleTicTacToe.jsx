@@ -54,7 +54,7 @@ export default function TicTacToe() {
   return (
     <>
       {winner !== STATUS.PLAYING && (
-       <h1 className="winner" style={{ color: winner === STATUS.X_WIN ? 'red' : winner === STATUS.O_WIN ? 'blue' : 'black' }}>
+       <h1 className="winner" style={{ color: winner === STATUS.X_WIN ? 'red' : winner === STATUS.O_WIN ? 'blue' : '#a90fff' }}>
        {winner === STATUS.X_WIN && 'Gano Messi!!'}
        {winner === STATUS.O_WIN && 'Gano Cristiano!!'}
        {winner === STATUS.DRAW && 'EMPATE!!'}
