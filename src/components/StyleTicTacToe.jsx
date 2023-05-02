@@ -60,8 +60,7 @@ export default function TicTacToe() {
         );
 
         if (availableCells.length) {
-          const randomCellIndex =
-            availableCells[Math.floor(Math.random() * availableCells.length)];
+          const randomCellIndex = availableCells[Math.floor(Math.random() * availableCells.length)];
           const newCells = [...cells];
           newCells[randomCellIndex] = PLAYERS.O;
 
